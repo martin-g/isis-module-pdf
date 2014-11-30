@@ -60,7 +60,7 @@ public class CustomerConfirmationTest extends DocxModuleIntegTest {
         final Blob blob = customerConfirmation.downloadCustomerConfirmation(order);
         Assert.assertThat(blob.getName(), is("customerConfirmation-1234.pdf"));
         Assert.assertThat(blob.getMimeType().getBaseType(), is("application/pdf"));
-        Assert.assertThat(blob.getBytes().length, is(0));
+        Assert.assertThat(blob.getBytes().length, is(greaterThan(0)));
     }
 
     @Test
@@ -68,7 +68,7 @@ public class CustomerConfirmationTest extends DocxModuleIntegTest {
         final Clob blob = customerConfirmation.downloadCustomerConfirmationInputHtml(order);
         Assert.assertThat(blob.getName(), is("customerConfirmation-1234.html"));
         Assert.assertThat(blob.getMimeType().getBaseType(), is("text/html"));
-        Assert.assertThat(blob.getChars().length(), is(greaterThan(800)));
+        Assert.assertThat(blob.getChars().length(), is(greaterThan(0)));
     }
 
 }
