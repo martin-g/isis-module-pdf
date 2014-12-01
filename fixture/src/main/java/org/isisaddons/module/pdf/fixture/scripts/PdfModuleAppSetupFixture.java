@@ -14,19 +14,19 @@
  *  specific language governing permissions and limitations
  *  under the License.
  */
-package org.isisaddons.module.docx.fixture.scripts;
+package org.isisaddons.module.pdf.fixture.scripts;
 
 import java.math.BigDecimal;
-import org.isisaddons.module.docx.fixture.dom.Order;
-import org.isisaddons.module.docx.fixture.dom.Orders;
+import org.isisaddons.module.pdf.fixture.dom.Order;
+import org.isisaddons.module.pdf.fixture.dom.Orders;
 import org.joda.time.LocalDate;
 
 import org.apache.isis.applib.fixturescripts.FixtureScript;
 import org.apache.isis.applib.services.clock.ClockService;
 
-public class DocxModuleAppSetupFixture extends FixtureScript {
+public class PdfModuleAppSetupFixture extends FixtureScript {
 
-    public DocxModuleAppSetupFixture() {
+    public PdfModuleAppSetupFixture() {
         withDiscoverability(Discoverability.DISCOVERABLE);
     }
 
@@ -34,7 +34,7 @@ public class DocxModuleAppSetupFixture extends FixtureScript {
     protected void execute(ExecutionContext executionContext) {
 
         // prereqs
-        execute(new DocxModuleAppTeardownFixture(), executionContext);
+        executeChild(new PdfModuleAppTeardownFixture(), executionContext);
 
         // create
         final Order order = create("1234", "Joe Smith", clockService.now().minusDays(5), "leave in the porch if out, don't deliver after 5pm, expedite if possible", executionContext);

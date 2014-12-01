@@ -14,7 +14,7 @@
  *  specific language governing permissions and limitations
  *  under the License.
  */
-package org.isisaddons.module.docx.integtests;
+package org.isisaddons.module.pdf.integtests;
 
 import org.junit.BeforeClass;
 import org.apache.isis.core.integtestsupport.IntegrationTestAbstract;
@@ -24,7 +24,6 @@ public abstract class PdfModuleIntegTest extends IntegrationTestAbstract {
 
     @BeforeClass
     public static void initClass() {
-        org.apache.log4j.PropertyConfigurator.configure("logging.properties");
         PdfModuleSystemInitializer.initIsft();
         
         // instantiating will install onto ThreadLocal

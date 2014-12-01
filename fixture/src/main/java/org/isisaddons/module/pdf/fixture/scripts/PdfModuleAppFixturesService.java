@@ -14,7 +14,7 @@
  *  specific language governing permissions and limitations
  *  under the License.
  */
-package org.isisaddons.module.docx.fixture.scripts;
+package org.isisaddons.module.pdf.fixture.scripts;
 
 import java.util.List;
 import org.apache.isis.applib.annotation.DomainService;
@@ -30,15 +30,15 @@ import org.apache.isis.applib.fixturescripts.FixtureScripts;
  */
 @Named("Prototyping")
 @DomainService(menuOrder = "20")
-public class DocxModuleAppFixturesService extends FixtureScripts {
+public class PdfModuleAppFixturesService extends FixtureScripts {
 
-    public DocxModuleAppFixturesService() {
-        super("org.isisaddons.module.docx.fixture.scripts");
+    public PdfModuleAppFixturesService() {
+        super("org.isisaddons.module.pdf.fixture.scripts");
     }
 
     @Override
     public FixtureScript default0RunFixtureScript() {
-        return findFixtureScriptFor(DocxModuleAppSetupFixture.class);
+        return findFixtureScriptFor(PdfModuleAppSetupFixture.class);
     }
 
     /**
@@ -56,7 +56,7 @@ public class DocxModuleAppFixturesService extends FixtureScripts {
     @Prototype
     @MemberOrder(sequence="20")
     public Object installFixturesAndReturnFirst() {
-        final List<FixtureResult> run = findFixtureScriptFor(DocxModuleAppSetupFixture.class).run(null);
+        final List<FixtureResult> run = findFixtureScriptFor(PdfModuleAppSetupFixture.class).run(null);
         return run.get(0).getObject();
     }
 

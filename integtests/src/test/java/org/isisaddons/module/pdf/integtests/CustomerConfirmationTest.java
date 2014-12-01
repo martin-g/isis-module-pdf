@@ -14,14 +14,14 @@
  *  specific language governing permissions and limitations
  *  under the License.
  */
-package org.isisaddons.module.docx.integtests;
+package org.isisaddons.module.pdf.integtests;
 
 import java.util.List;
 import javax.inject.Inject;
-import org.isisaddons.module.docx.fixture.dom.Order;
-import org.isisaddons.module.docx.fixture.dom.Orders;
-import org.isisaddons.module.docx.fixture.dom.templates.CustomerConfirmation;
-import org.isisaddons.module.docx.fixture.scripts.DocxModuleAppSetupFixture;
+import org.isisaddons.module.pdf.fixture.dom.Order;
+import org.isisaddons.module.pdf.fixture.dom.Orders;
+import org.isisaddons.module.pdf.fixture.dom.templates.CustomerConfirmation;
+import org.isisaddons.module.pdf.fixture.scripts.PdfModuleAppSetupFixture;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -35,7 +35,7 @@ public class CustomerConfirmationTest extends PdfModuleIntegTest {
 
     @Before
     public void setUpData() throws Exception {
-        scenarioExecution().install(new DocxModuleAppSetupFixture());
+        scenarioExecution().install(new PdfModuleAppSetupFixture());
     }
 
     @Inject

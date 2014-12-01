@@ -14,12 +14,12 @@
  *  specific language governing permissions and limitations
  *  under the License.
  */
-package org.isisaddons.module.docx.fixture.scripts;
+package org.isisaddons.module.pdf.fixture.scripts;
 
 import org.apache.isis.applib.fixturescripts.FixtureScript;
-import org.apache.isis.objectstore.jdo.applib.service.support.IsisJdoSupport;
+import org.apache.isis.applib.services.jdosupport.IsisJdoSupport;
 
-public class DocxModuleAppTeardownFixture extends FixtureScript {
+public class PdfModuleAppTeardownFixture extends FixtureScript {
 
     @Override
     protected void execute(ExecutionContext executionContext) {

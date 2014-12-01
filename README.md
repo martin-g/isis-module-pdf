@@ -1,11 +1,11 @@
-# isis-module-docx #
+# isis-module-pdf #
 
-[![Build Status](https://travis-ci.org/isisaddons/isis-module-docx.png?branch=master)](https://travis-ci.org/isisaddons/isis-module-docx)
+[![Build Status](https://travis-ci.org/isisaddons/isis-module-pdf.png?branch=master)](https://travis-ci.org/isisaddons/isis-module-pdf)
 
 This module, intended for use with [Apache Isis](http://isis.apache.org), provides a mail-merge capability of input 
-data into an MS Word `.docx` template.
+data into an MS Word `.pdf` template.
 
-The module consists of a single domain service, `DocxService`.  This provides an API to merge a `.docx` template
+The module consists of a single domain service, `DocxService`.  This provides an API to merge a `.pdf` template
 against its input data.  The input data is represented as a simple HTML file.
 
 The service supports several data types:
@@ -16,7 +16,7 @@ The service supports several data types:
 - bulleted list
 - tables
 
-The implementation uses [docx4j](http://www.docx4java.org), [guava](https://code.google.com/p/guava-libraries/) and
+The implementation uses [pdf4j](http://www.docx4java.org), [guava](https://code.google.com/p/guava-libraries/) and
 [jdom2](http://www.jdom.org).  Databinding to custom XML parts (the `.docx` file format's in-built support) is *not*
 used (as repeating datasets - required for lists and tables - was not supported prior to Word 2013).
 

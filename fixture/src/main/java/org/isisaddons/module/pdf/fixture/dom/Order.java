@@ -14,7 +14,7 @@
  *  specific language governing permissions and limitations
  *  under the License.
  */
-package org.isisaddons.module.docx.fixture.dom;
+package org.isisaddons.module.pdf.fixture.dom;
 
 import java.math.BigDecimal;
 import java.util.Collection;

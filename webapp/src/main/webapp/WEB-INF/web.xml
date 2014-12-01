@@ -176,7 +176,7 @@
         <filter-class>org.apache.wicket.protocol.http.WicketFilter</filter-class>
         <init-param>
             <param-name>applicationClassName</param-name>
-            <param-value>org.isisaddons.module.docx.webapp.PdfModuleApplication</param-value>
+            <param-value>org.isisaddons.module.pdf.webapp.PdfModuleApplication</param-value>
         </init-param>
     </filter>
     <filter-mapping>

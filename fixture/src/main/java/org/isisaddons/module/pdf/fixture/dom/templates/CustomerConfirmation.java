@@ -12,7 +12,7 @@
  *  specific language governing permissions and limitations
  *  under the License.
  */
-package org.isisaddons.module.docx.fixture.dom.templates;
+package org.isisaddons.module.pdf.fixture.dom.templates;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -25,8 +25,8 @@ import com.google.common.io.Resources;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm;
 import org.apache.pdfbox.pdmodel.interactive.form.PDField;
-import org.isisaddons.module.docx.fixture.dom.Order;
-import org.isisaddons.module.docx.fixture.dom.OrderLine;
+import org.isisaddons.module.pdf.fixture.dom.Order;
+import org.isisaddons.module.pdf.fixture.dom.OrderLine;
 import org.apache.isis.applib.annotation.ActionSemantics;
 import org.apache.isis.applib.annotation.ActionSemantics.Of;
 import org.apache.isis.applib.annotation.DomainService;

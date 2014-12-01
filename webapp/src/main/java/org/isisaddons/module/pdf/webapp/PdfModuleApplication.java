@@ -14,7 +14,7 @@
  *  specific language governing permissions and limitations
  *  under the License.
  */
-package org.isisaddons.module.docx.webapp;
+package org.isisaddons.module.pdf.webapp;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -47,7 +47,7 @@ import org.apache.isis.viewer.wicket.viewer.integration.wicket.AuthenticatedWebS
  *    &lt;filter-class>org.apache.wicket.protocol.http.WicketFilter&lt;/filter-class>
  *    &lt;init-param>
  *      &lt;param-name>applicationClassName&lt;/param-name>
- *      &lt;param-value>org.isisaddons.module.docx.webapp.PdfModuleApplication&lt;/param-value>
+ *      &lt;param-value>org.isisaddons.module.pdf.webapp.PdfModuleApplication&lt;/param-value>
  *    &lt;/init-param>
  * &lt;/filter>
  * </pre>
