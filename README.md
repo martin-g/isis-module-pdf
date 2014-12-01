@@ -32,7 +32,7 @@ Installing fixture data...
 
 The template `.pdf` is created with Libre Office Writer by using Form controls (View > Toolbars > Form Controls).
 Each form control is used as a placeholder for a detail in the Order entity class.
-Read an <a href="http://www.maketecheasier.com/create-a-pdf-with-fillable-forms-in-libreoffice/">article</a> in the web with the steps to
+Read an <a href="http://www.maketecheasier.com/create-a-pdf-with-fillable-forms-in-libreoffice/" target="_blank">article</a> in the web with the steps to
 create such document and to export it as a PDF with form.
 
 ![](https://raw.github.com/martin-g/isis-module-pdf/master/images/document-with-form-libreoffice.png)
