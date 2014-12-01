@@ -10,6 +10,9 @@ It provides a single action method that loads a`.pdf` template and populates it 
 
 The implementation uses [Apache PDFBox](http://pdfbox.apache.org/) for reading and writing the PDF documents.
 
+**Caution**: This is just an example project!
+It provides a demo domain service with a single action demonstrating how to generate a random document out of your domain entity.
+
 ## Screenshots and Usage ##
 
 The following screenshots and code fragments show an example app's usage of the module.
@@ -29,8 +32,8 @@ Installing fixture data...
 
 The template `.pdf` is created with Libre Office Writer by using Form controls (View > Toolbars > Form Controls).
 Each form control is used as a placeholder for a detail in the Order entity class.
-See an [article](http://www.maketecheasier.com/create-a-pdf-with-fillable-forms-in-libreoffice/) in the web with the steps to create the document and
-to export it as a PDF with form.
+Read an <a href="http://www.maketecheasier.com/create-a-pdf-with-fillable-forms-in-libreoffice/">article</a> in the web with the steps to
+create such document and to export it as a PDF with form.
 
 ![](https://raw.github.com/martin-g/isis-module-pdf/master/images/document-with-form-libreoffice.png)
 
