@@ -36,7 +36,11 @@ with a form.
 Read an <a href="http://www.maketecheasier.com/create-a-pdf-with-fillable-forms-in-libreoffice/" target="_blank">article</a> in the web with
 the exact steps how to create such document and to export it as a PDF with form.
 
+LibreOffice:
+
 ![](https://raw.github.com/martin-g/isis-module-pdf/master/images/document-with-form-libreoffice.png)
+
+Evince (a PDF viewer):
 
 ![](https://raw.github.com/martin-g/isis-module-pdf/master/images/document-with-form-evince.png)
 
