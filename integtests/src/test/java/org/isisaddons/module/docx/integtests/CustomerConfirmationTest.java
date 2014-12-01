@@ -26,13 +26,12 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.apache.isis.applib.value.Blob;
-import org.apache.isis.applib.value.Clob;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.Matchers.greaterThan;
 import static org.junit.Assert.assertThat;
 
-public class CustomerConfirmationTest extends DocxModuleIntegTest {
+public class CustomerConfirmationTest extends PdfModuleIntegTest {
 
     @Before
     public void setUpData() throws Exception {
@@ -62,13 +61,4 @@ public class CustomerConfirmationTest extends DocxModuleIntegTest {
         Assert.assertThat(blob.getMimeType().getBaseType(), is("application/pdf"));
         Assert.assertThat(blob.getBytes().length, is(greaterThan(0)));
     }
-
-    @Test
-    public void downloadCustomerConfirmationInputHtml() throws Exception {
-        final Clob blob = customerConfirmation.downloadCustomerConfirmationInputHtml(order);
-        Assert.assertThat(blob.getName(), is("customerConfirmation-1234.html"));
-        Assert.assertThat(blob.getMimeType().getBaseType(), is("text/html"));
-        Assert.assertThat(blob.getChars().length(), is(greaterThan(0)));
-    }
-
 }

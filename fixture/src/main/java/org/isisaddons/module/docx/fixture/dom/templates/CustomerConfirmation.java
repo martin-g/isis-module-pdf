@@ -25,7 +25,6 @@ import com.google.common.io.Resources;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm;
 import org.apache.pdfbox.pdmodel.interactive.form.PDField;
-import org.isisaddons.module.docx.dom.LoadTemplateException;
 import org.isisaddons.module.docx.fixture.dom.Order;
 import org.isisaddons.module.docx.fixture.dom.OrderLine;
 import org.apache.isis.applib.annotation.ActionSemantics;
@@ -44,7 +43,7 @@ public class CustomerConfirmation {
     private byte[] pdfAsBytes;
 
     @PostConstruct
-    public void init() throws IOException, LoadTemplateException {
+    public void init() throws IOException {
         pdfAsBytes = Resources.toByteArray(Resources.getResource(this.getClass(), "CustomerConfirmation.pdf"));
     }
     //endregion
